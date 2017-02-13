@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
 
+<!--HW, FElIX RIEG-BAUMHAUER-->
+
+<html>
+  
   <head>
   <style>
     #slate {
@@ -9,10 +12,10 @@
   </style>
   </head>
 
-  
+  <body>
   <h1>Canvas</h1>
 
-  <canvas width="500" height="500" id="slate">
+  <canvas width="500" height="500" id="slate" onclick="showCoords(event)"> 
     
   </canvas>
   
@@ -20,5 +23,39 @@
   <br>
   
   <button type="button" id="clear">Clear</button>
+  </body>
 
+
+
+  <script src="index.js"></script>
+  <!--
+  <script>
+    var c = document.getElementById("slate");
+
+    var ctx = c.getContext('2d');
+
+    ctx.fillStyle = "#ff00ff";
+
+
+    
+    
+    function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    x=x-13;
+    y=y-87;
+    ctx.fillRect(x,y,100,100);
+    }
+
+    
+    
+    
+
+    document.getElementById("clear").addEventListener("click", function(){
+    ctx.clearRect(0,0,500,500);
+    });
+  </script>
+  -->
+
+  
 </html>
